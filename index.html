@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/343ac97d6c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/home.css">
+
+    <!-- jQuery 스크립트 추가 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script defer src="jquery/main.js"></script>
+
+    <!-- Slick 플러그인 스크립트 추가 -->
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <title>펫플러스 아카데미</title>
+</head>
+<body>
+    <nav>
+        <div class="inner">
+            <div class="logo">
+                <a href="index.html"><img src="img/pet_logo.PNG"></a>
+            </div>
+            <ul class="menu">
+                <li>|</li>
+                <li><a href="전문과정.html">전문가과정</a></li>
+                <li><a href= "취미반.html">취미반</a></li>
+                <li><a href="자격증.html">자격증정보</a></li>
+                <li><a href="게시판.html">게시판</a></li>
+                <li class="view_more">Login</li>
+                <!-- login  Modal -->
+                <div class="modal">
+                    <!-- login의 내용 -->
+                    <div class="modal-login">
+                        <span class="close">&times;</span>
+                        <h2 style="text-align: center;">로그인</h2>
+                        <div class="box">
+                            <div class="id">
+                                <input type="emil" name="" id="" placeholder="이메일">
+                            </div>
+                            <div class="pw">
+                                <input type="password" name="" id="" placeholder="비밀번호">
+                            </div>
+                            <label><input type="checkbox" value="">로그인상태유지</label>
+                            <div class="login_btn">
+                                <input type="submit" value="로그인">
+                            </div>
+                            <ul class="login_menu">
+                                <li style="margin-right: 72px;">회원가입</li>
+                                <li>아이디찾기＊비밀번호찾기</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                    
+                <li class="view_more"><i class="fas fas fa-search"></i></li>
+                <!-- 검색 Modal -->
+                <div class="modal">
+                  <!-- search Modal의 내용 -->
+                  <div class="modal-search">
+                    <span class="close">&times;</span>
+                    <form class="search-box" action="" method="get">
+                        <input class="search-txt" type="text" name="" placeholder="검색">
+                        <button class="search-btn" type="submit">
+                            <i class="fas fas fa-search"></i>
+                        </button>
+                    </form>
+                  </div>
+                </div>
+            </ul>
+                </div>
+        </div>
+    </nav>
+
+    <div class="slider">
+        <div class="slider_item"><img src="img/slider01.PNG" alt="Image 1"></div>
+        <div class="slider_item"><img src="img/slider00.PNG" alt="Image 2"></div>
+    </div>
+
+    <section>
+        <article>
+            <h2>자주 찾는 정보</h2>
+                <ul class="information">
+                    <li>
+                        <a href="자격증.html"><img src="img/free-icon-certificate-4696816.png"></a>
+                        <h3>자격증</h3>
+                    </li>
+                    <li class="view_more">
+                        <img src="img/free-icon-homeschooling-4696876.png">
+                        <h3>커리큘럼<br>(정규반)</h3>
+                    </li> 
+                    <!-- 커리큘럼 Modal -->
+                    <div class="modal">
+                        <!-- 커리큘럼 Modal의 내용 -->
+                        <div class="modal-curriculum">
+                          <span class="close">&times;</span>
+                          <div class="modal_slider">
+                            <div class="modal_item"><img src="img/커리큘럼00.PNG" alt="Image 1"></div>
+                            <div class="modal_item"><img src="img/커리큘럼01.PNG" alt="Image 2"></div>
+                            <div class="modal_item"><img src="img/커리큘럼02.PNG" alt="Image 3"></div>
+                            <div class="modal_item"><img src="img/커리큘럼03.PNG" alt="Image 4"></div>
+                        </div>
+                        </div>
+                      </div>
+                    <li class="view_more">
+                        <img src="img/free-icon-won-4498198.png">
+                        <h3>수강료</h3>
+                    </li>
+                    <!-- 수강료 modal -->
+                    <div class="modal">
+                        <!-- 수강료 Modal의 내용 -->
+                        <div class="modal-money">
+                            <img src="img/전문과정02.PNG">
+                          <span class="close">&times;</span>                         
+                        </div>
+                      </div>
+                    
+                    <li>
+                        <a href="교육시간.html"><img src="img/free-icon-time-management-4624232.png"></a>
+                        <h3>교육시간</h3>
+                    </li>
+                    <li class="view_more">
+                        <img src="img/free-icon-calculator-4696844.png">
+                        <h3>지원금 계산</h3>
+                    </li>
+                        <!-- 지원금 Modal -->
+                        <div class="modal">
+                            <!-- 지원금 Modal의 내용 -->
+                            <div class="modal-content">
+                                <span class="close">&times;</span>
+                                <p>내가 받을 지원금 계산하기</p>
+                                <div class="box">
+                                    <div class="box1">
+                                        <h3>질문 1: 몇 명이 등록하시나요?</h3>
+                                        <label for="one"><input type="radio" name="box1" id="one" value="one">1명(본인 혼자)</label>
+                                        <label for="two"><input type="radio" name="box1" id="two" value="two">2명 이상</label>
+                                    </div>  
+                                    <div class="box2">
+                                        <h3>질문 2: 방문상담 후 바로 등록 하실 예정인가요?</h3>
+                                        <label for="one"><input type="radio" name="box2" id="one" value="one">예</label>
+                                        <label for="two"><input type="radio" name="box2" id="two" value="two">아니요</label>
+                                    </div>  
+                                    <div class="box2">
+                                        <h3>질문 3: 수강 등록 시, 몇 개월로 결제 하실 예정이신가요?</h3>
+                                        <label for="one"><input type="radio" name="box3" id="one" value="one">1개월</label>
+                                        <label for="two"><input type="radio" name="box3" id="two" value="two">6개월(3개월 무이자할부)</label>
+                                    </div>  
+                                    <div class="box4">
+                                        <h3>질문 4: 계획하신 수강기간이 어떻게 되시나요?</h3>
+                                        <label for="one"><input type="radio" name="box4" id="one" value="one">6개월 미만</label>
+                                        <label for="two"><input type="radio" name="box4" id="two" value="two">6개월~1년</label>
+                                    </div>  
+
+                                    <button type="submit" class="submit-button">예상지원금</button>
+                                </div>
+                                <h1 class="result">0</h1>
+                                <h4>*수강상황과 학원 정책에 따라 금액이 달라질 수 있습니다.</h4>
+                            </div>
+                        </div>
+
+                    <li class="view_more">
+                        <img src="img/free-icon-heart-4605270.png">
+                        <h3>나눔강의</h3>
+                    </li>
+                    <!-- 나눔강의 Modal -->
+                    <div class="modal">
+                      <!-- 나눔강의 Modal의 내용 -->
+                      <div class="modal-class">
+                        <span class="close">&times;</span>
+                        <p>준비중 입니다.</p>
+                      </div>
+                    </div>
+                </ul>
+        </article>
+
+        <article>
+            <h2>나에게 맞는 강의</h2>
+            <ul class="lesson">
+                <li>
+                    <h3>정규반</h3>
+                    <img src="img/정규반.PNG">
+                </li>
+                <li>
+                    <h3>취미반</h3>
+                    <img src="img/취미반.PNG">
+                </li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>수강생 후기</h3>
+            <div class="autoplay">
+                <div class="review"><img src="img/후기00.PNG"></div>
+                <div class="review"><img src="img/후기01.PNG"></div>
+                <div class="review"><img src="img/후기02.PNG"></div>
+                <div class="review"><img src="img/후기03.PNG"></div>
+                <div class="review"><img src="img/후기04.PNG"></div>
+                <div class="review"><img src="img/후기05.PNG"></div>
+                <div class="review"><img src="img/후기06.PNG"></div>
+                <div class="review"><img src="img/후기07.PNG"></div>
+                <div class="review"><img src="img/후기08.PNG"></div>
+                <div class="review"><img src="img/후기09.PNG"></div>
+                <div class="review"><img src="img/후기10.PNG"></div>
+                <div class="review"><img src="img/후기11.PNG"></div>
+            </div>
+        </article>
+
+        <article>
+            <h4>INSAGRAM</h4>
+            <div class="autoplay">
+                <div class="insta"><img src="img/인스타00.PNG"></div>
+                <div class="insta"><img src="img/인스타01.PNG"></div>
+                <div class="insta"><img src="img/인스타02.PNG"></div>
+                <div class="insta"><img src="img/인스타03.PNG"></div>
+                <div class="insta"><img src="img/인스타04.PNG"></div>
+                <div class="insta"><img src="img/인스타05.PNG"></div>
+                <div class="insta"><img src="img/인스타06.PNG"></div>
+                <div class="insta"><img src="img/인스타07.PNG"></div>
+                <div class="insta"><img src="img/인스타08.PNG"></div>
+                <div class="insta"><img src="img/인스타09.PNG"></div>
+                <div class="insta"><img src="img/인스타10.PNG"></div>
+            </div>
+        </article>
+    </section>
+
+    <div class="blue">
+        <div class="blue_box">
+            <ul class="phone">
+                <li>
+                    <img src="img/free-icon-phone-4616083.png">
+                    <h4>(클릭)</h4>
+                </li>
+                <li>
+                    전화문의<br>
+                    0507-1336-3362<br>
+                    평일: 오전 11시 ~ 오후 8시<br>
+                    주말: 오전 11시 ~ 오후 4시<br>
+                </li>
+            </ul>
+            <ul class="phone">
+                <li>
+                    <img src="img/free-icon-kakao-talk-4494622.png">
+                    <h4>(클릭)</h4>
+                </li>
+                <li>
+                    메뉴상담 (<span style="color: yellow;">24시간</span>)<br>
+                    채팅상담<br>
+                    평일: 오전 10시 ~ 오후 8시<br>
+                    주말: 오전 11시 ~ 오후 4시<br>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer_box">
+            <ul class="Address">
+                <li style="font-size: 19px; font-weight: 600;">(주)블록펫</li>
+                <li>주소: 경기도 성남시 중원구 광명로 355, 미성빌딩 5~6층</li>
+                <li>전화: 0507-2336-3362</li>
+                <li>대표자: 김은지 | 개인정보관리 책임자: 김은지</li>
+                <li>사업자등록번호: 445-87-00937 | 학원번호: 6323</li>
+            </ul>
+            <ul class="Address">
+                <li>이용약관</li>
+                <li style= "font-size: 14px; font-weight: 700;">개인정보처리방침</li>
+            </ul>
+        </div>
+    </footer>
+
+    <script>
+        $(document).ready(function(){
+          $('.slider').slick({
+                autoplay: true,         // 자동 재생 설정 (true or false)
+                dots: false,             // 페이지 네비게이션 점 보이기 설정 (true or false)
+                arrows: true,           // 이전/다음 버튼 보이기 설정 (true or false)
+                infinite: true,         // 무한 롤링 설정 (true or false)
+                speed : 300,            // 슬라이드 전환 속도 (밀리초 단위)
+                slidesToShow: 1,        // 한 화면에 보여줄 슬라이드 개수
+                slidesToScroll: 1,     // 한 번에 넘길 슬라이드 개수
+                prevArrow : "<button type='button' class='slick-prev'><</button>",
+                nextArrow : "<button type='button' class='slick-next'>></button>",
+          });
+        });
+    </script>
+
+<script>
+    $(document).ready(function(){
+      $('.modal_slider').slick({
+            autoplay: true,         // 자동 재생 설정 (true or false)
+            dots: false,             // 페이지 네비게이션 점 보이기 설정 (true or false)
+            arrows: true,           // 이전/다음 버튼 보이기 설정 (true or false)
+            infinite: true,         // 무한 롤링 설정 (true or false)
+            speed : 500,            // 슬라이드 전환 속도 (밀리초 단위)
+            slidesToShow: 1,        // 한 화면에 보여줄 슬라이드 개수
+            slidesToScroll: 1,     // 한 번에 넘길 슬라이드 개수
+            prevArrow : "<button type='button' class='slick-prev'><</button>",
+            nextArrow : "<button type='button' class='slick-next'>></button>",
+      });
+    });
+</script>
+
+    <script>
+        $(document).ready(function(){
+            $('.autoplay').slick({
+                slidesToShow: 4,
+                arrows: false,
+                slidesToScroll: 1,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                centerMode: true,
+                focusOnSelect: true
+            });
+        });
+    </script>
+
+</body>
+</html>

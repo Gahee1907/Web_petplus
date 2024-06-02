@@ -1,0 +1,264 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+ul, ol, li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	outline: 0;
+    color: black;
+}
+
+/*메뉴바*/
+nav {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+}
+nav .inner {
+    display: flex; justify-content: center;
+    width: 1260px; height: 80px;
+    padding: 12px 12px 0; margin: 0 auto;
+}
+nav .inner .logo {
+    margin-right: auto;
+}
+nav .inner .logo img {width: 195px;}
+nav .inner .menu {
+    display: flex;
+    margin-left: auto;
+    margin-top: 10px;
+    justify-items: center;
+}
+nav .inner .menu > li {
+    padding: 10px 17px;
+    font-size: 16px;
+}
+nav .inner .menu li a:hover {color: gray;}
+nav .inner .menu li:nth-child(1) {color:lightgray;}
+nav .inner .menu>li:nth-child(2) {border-bottom: 3px solid black; font-weight: 600;}
+nav .inner .menu li:nth-child(7) {padding: 10px 0;}
+
+/*모달*/
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 3; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.596); /* Black w/ opacity */
+}
+
+/*login modal*/
+.modal-login {
+    position: relative;
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 380px;
+    border-radius: 5px;
+}
+.modal-login .id input{
+    width:  310px; height: 40px;
+    margin-top: 25px;
+    border: 1px solid lightgray;
+    padding: 0 20px;
+    outline: none;
+}
+.modal-login .pw input {
+    width:  310px; height: 40px;
+    border: 1px solid lightgray;
+    padding: 0 20px;
+    margin-top: 2px;
+    outline: none;
+}
+.modal-login label input {
+    width: 30px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.modal-login .login_btn  input{ 
+    width: 310px; height: 48px;
+    border: 0;
+    outline: none;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.modal-login .box {width: 310px; margin: 0 auto;}
+
+.modal-login .login_menu {
+    display: flex;
+    margin: 10px 0;
+    font-weight: 600;
+}
+.modal-login .login_menu li {
+    font-size: 14px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.modal-login .close {
+    color: #aaa;
+    position:absolute;
+    right: 10px;
+    top: 0;
+    font-size: 35px;
+}
+
+.modal-login
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*search modal*/
+.modal-search {
+    position: relative;
+    width: 100%; height: 600px;
+    margin: 0 auto;
+    color: white;
+}
+.modal-search .search-box {
+    width: 1000px; height: 400px;
+    margin: 0 auto;
+}
+.modal-search .search-txt {
+    width: 800px;
+    height: 70px;
+    font-size: 30px;
+    padding-right: 85px;
+    color: white;
+    background: none;
+    border: none;
+    border-bottom: 1.4px solid rgb(255, 255, 255);
+    outline: none;
+    position: absolute;
+    top: 50%;
+    left: 400px;
+}
+.modal-search .search-btn {
+    border: none;
+    color: white;
+    float: right;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    background: none;
+    position: absolute;
+    top: 50%;
+    right: 320px;
+}
+.modal-search .close {
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    font-weight: 100;
+    font-size: 70px;
+    cursor: pointer;
+}
+
+/*main 영역*/
+main {
+    padding-top: 80px;
+    width: 100%;
+}
+main article {
+    width: 100%;
+}
+main article .inner{
+    width: 1000px;
+    margin: 0 auto;
+}
+main article img {
+    width: 100%;
+    margin: 0 auto;
+}
+
+main article:nth-child(1) {background: #254e50;}
+main article:nth-child(2) {background-color: #ffffff;}
+main article:nth-child(3) {background-color: #f5f5ff;}
+main article:nth-child(4) {background-color: #141b35;}
+main article:nth-child(5) {background-color: #fee3ec;}
+main article:nth-child(6) {background-color: #daeef9;}
+main article:nth-child(7) {background-color: #14252f;}
+main article:nth-child(8) {background-color: #ffffff;}
+main article:nth-child(9) {background-color: #ffffff; margin-bottom: 50px;}
+main article:nth-child(10) {background-color: #ffffff;}
+main article:nth-child(11) {background-color: #eff7fa;}
+
+/*수강생 후기 & instagram 영역*/
+main article .inner .autoplay img {
+    width: 220px; height: 220px;
+    margin-top: 30px;
+    border: 1px solid lightgray;
+}
+main article .inner .autoplay .insta img {
+    width: 245px;
+}
+main article .inner h1 {
+    text-align: center; font-size: 30px;
+    margin-top: 30px;
+}
+
+/*문의 영역*/
+.blue{
+    display: flex;
+    background-color: rgb(30, 92, 173);
+    width: 100%;
+    height: 170px;
+}
+.blue .blue_box {
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    margin: auto;
+}
+.blue .blue_box .phone {
+    display: flex;
+    width: 335px;
+    margin: 0 50px; 
+}
+.blue .blue_box .phone li {
+    color: white;
+    margin: 10px;
+    font-size: 17.5px;
+    font-weight: bolder;
+    line-height: 27px;
+}
+.blue .blue_box .phone li h4 {text-align: center; cursor: pointer;}
+.blue .blue_box .phone li img {width: 75px; height: 75px; cursor: pointer;}
+
+
+
+/*footer 영역*/
+footer {
+    width: 100%; height: 230px;
+    background-color: rgb(251, 251, 251);
+}
+footer .footer_box{
+    width: 1000px; height: 200px;
+    display: flex;
+}
+footer .footer_box .Address {
+    margin: 30px 130px;
+    line-height: 34px;
+    font-size: 13.7px;
+}
+

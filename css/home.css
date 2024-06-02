@@ -1,0 +1,474 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+ul, ol, li {
+	list-style: none;
+}
+a {
+	text-decoration: none;
+	outline: 0;
+    color: black;
+}
+
+.upbtn {
+    top: 85%; left: 93%; width: 45px; height: 45px;
+    border-radius: 80%; background-color: #ffffff;
+    border: black 3px solid;
+    position: fixed; z-index: 2;
+    cursor:pointer;
+}
+
+/*메뉴바*/
+nav {
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+}
+nav .inner {
+    display: flex; justify-content: center;
+    width: 1260px; height: 80px;
+    padding: 12px 12px 0; margin: 0 auto;
+}
+nav .inner .logo {
+    margin-right: auto;
+}
+nav .inner .logo img {width: 195px;}
+nav .inner .menu {
+    display: flex;
+    margin-left: auto;
+    margin-top: 10px;
+    justify-items: center;
+}
+nav .inner .menu > li {
+    padding: 10px 17px;
+    font-size: 16px;
+}
+nav .inner .menu li a:hover {color: gray;}
+nav .inner .menu>li:nth-child(1) {color:lightgray;}
+nav .inner .menu li:nth-child(7) {padding: 10px 0;}
+
+
+/*슬라이드*/
+.slider {
+    padding-top: 80px;
+    width: 1250px;
+    margin: 0 auto;
+    position: relative;
+}
+.slider .slider_item img {
+    width: 100%;
+    height: 500px;
+}
+
+/*슬라이드 버튼*/
+.slider button.slick-next.slick-arrow {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background: none;
+    font-size: 20px;
+    color: white;
+}
+.slider button.slick-prev.slick-arrow {
+    position: absolute;
+    top: 50%; left: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: 1px solid white;
+    background: none;
+    color: white;
+    font-size: 20px;
+    z-index: 1;
+}
+
+
+/*modal*/
+  
+.modal {
+    display: none;
+    position: fixed; 
+    z-index: 3; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; 
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.596); /* Black w/ opacity */
+}
+
+/*login modal*/
+.modal-login {
+    position: relative;
+    background-color: #fefefe;
+    margin: 10% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 380px;
+    border-radius: 5px;
+}
+.modal-login .id input{
+    width:  310px; height: 40px;
+    margin-top: 25px;
+    border: 1px solid lightgray;
+    padding: 0 20px;
+    outline: none;
+}
+.modal-login .pw input {
+    width:  310px; height: 40px;
+    border: 1px solid lightgray;
+    padding: 0 20px;
+    margin-top: 2px;
+    outline: none;
+}
+.modal-login label input {
+    width: 30px;
+    margin: 15px 0;
+    cursor: pointer;
+}
+
+.modal-login .login_btn  input{ 
+    width: 310px; height: 48px;
+    border: 0;
+    outline: none;
+    background-color: black;
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+.modal-login .box {width: 310px; margin: 0 auto;}
+
+.modal-login .login_menu {
+    display: flex;
+    margin: 10px 0;
+    font-weight: 600;
+}
+.modal-login .login_menu li {
+    font-size: 14px;
+    padding: 2px;
+    cursor: pointer;
+}
+
+.modal-login .close {
+    color: #aaa;
+    position:absolute;
+    right: 10px;
+    top: 0;
+    font-size: 35px;
+}
+
+.modal-login
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*search modal*/
+.modal-search {
+    position: relative;
+    width: 100%; height: 600px;
+    margin: 0 auto;
+    color: white;
+}
+.modal-search .search-box {
+    width: 1000px; height: 400px;
+    margin: 0 auto;
+}
+.modal-search .search-txt {
+    width: 800px;
+    height: 70px;
+    font-size: 30px;
+    padding-right: 85px;
+    color: white;
+    background: none;
+    border: none;
+    border-bottom: 1.4px solid rgb(255, 255, 255);
+    outline: none;
+    position: absolute;
+    top: 50%;
+    left: 400px;
+}
+.modal-search .search-btn {
+    border: none;
+    color: white;
+    float: right;
+    width: 50px;
+    height: 50px;
+    font-size: 40px;
+    background: none;
+    position: absolute;
+    top: 50%;
+    right: 320px;
+}
+.modal-search .close {
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 0;
+    font-weight: 100;
+    font-size: 70px;
+    cursor: pointer;
+}
+
+/*curriculum modal*/
+.modal-curriculum {
+    position: relative;
+    width: 540px; height: 600px;
+    margin: 70px auto;
+    background-color: white;
+}
+.modal-curriculum img{width: 500px; height: 580px; margin: 0 auto;}
+.modal-curriculum .close {
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    width: 37px; height: 37px;
+    position: absolute;
+    right: -3.5%;
+    top: -3.5%;
+    font-weight: 100;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 1px 2px gray;
+}
+.modal_slider button.slick-next.slick-arrow {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: black;
+}
+.modal_slider button.slick-prev.slick-arrow {
+    position: absolute;
+    top: 50%; left: 15px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 600;
+    z-index: 1;
+}
+
+
+/*money modal*/
+.modal-money {
+    position: relative;
+    width: 540px; height: 580px;
+    margin: 70px auto;
+}
+.modal-money img{width: 540px; height: 580px;}
+.modal-money .close {
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    width: 37px; height: 37px;
+    position: absolute;
+    right: -3.5%;
+    top: -3.5%;
+    font-weight: 100;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 1px 2px gray;
+}
+
+/*class modal*/
+.modal-class {
+    position: relative;
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+}
+.modal-class p {font-size: 25px; text-align: center;}
+.modal-class .close {
+    color: #aaa;
+    position:absolute;
+    right: 10px;
+    top: 0;
+    font-size: 35px;
+}
+.modal-class
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+/*content modal*/
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 5% auto;
+    padding: 30px;
+    border: 1px solid #888;
+    width: 540px;
+}
+.modal-content p {
+    text-align: center;
+    font-size: 18px; 
+    font-weight: 600;
+    margin-bottom: 40px;
+}
+.modal-content h1 {text-align: left; font-size: 30px; font-weight: 600; color: blue; margin-bottom: 20px;}
+.modal-content h3 {text-align: left; font-size: 16px; font-weight: 600;}
+.modal-content h4 {text-align: left; font-size: 14px; font-family: 고딕체;}
+.modal-content .box {line-height: 35px;}
+.modal-content .box label {margin-right: 0 30px;}
+.modal-content .box div:nth-child(n+1) {margin-bottom: 50px;}
+.modal-content .close {
+    color: black;
+    background-color: rgb(255, 255, 255);
+    border-radius: 50%;
+    width: 37px; height: 37px;
+    position: absolute;
+    right: -4%;
+    top: -3%;
+    font-weight: 100;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    box-shadow: 1px 2px 3px gray;
+}
+
+.modal-content .box .submit-button{
+    margin: 1rem 0;
+    padding: 0.5rem 1rem;
+    border-radius: 3px;
+  }
+
+
+/*콘텐츠 영역*/
+section {
+    width: 1200px;
+    margin: 0 auto;
+
+}
+section article {
+    width: 1150px;
+    margin: 45px auto;
+}
+
+section article h2 {font-size: 26px;}
+section article h3 {text-align: center;}
+section article h4 {font-size: 40px; text-align: center; font-weight: 400; font-family: 'Courier New', Courier, monospace;}
+
+/*자주 찾는 정보 영역*/
+section article .information {
+    display: flex;
+    justify-items: center;
+}
+section article .information li {
+    margin: 45px;
+}
+section article .information  li img {width: 100px; height: 100px;}
+section article .information  li h3 {
+    text-align: center;
+}
+
+/*나에게 맞는 강의 영역*/
+section article .lesson {
+    display: flex;
+    justify-items: center;
+}
+section article .lesson h3 {
+    font-size: 22px;
+    margin: 0 0 10px 80px;
+}
+section article .lesson li  {
+    margin: 40px;
+}
+section article .lesson li img {
+    width: 500px;
+}
+
+/*수강생 후기 & instagram 영역*/
+section article .autoplay .review img {
+    width: 249px; height: 230px;
+    margin-top: 20px;
+    border: 1px solid lightgray;
+}
+section article .autoplay .insta img {
+    width: 256px;
+    margin-top: 20px;
+    border: 1px solid lightgray;
+}
+
+/*문의 영역*/
+.blue{
+    display: flex;
+    background-color: rgb(30, 92, 173);
+    width: 100%;
+    height: 170px;
+}
+.blue .blue_box {
+    display: flex;
+    justify-content: center;
+    width: 900px;
+    margin: auto;
+}
+.blue .blue_box .phone {
+    display: flex;
+    width: 335px;
+    margin: 0 50px; 
+}
+.blue .blue_box .phone li {
+    color: white;
+    margin: 10px;
+    font-size: 17.5px;
+    font-weight: bolder;
+    line-height: 27px;
+}
+.blue .blue_box .phone li h4 {text-align: center; cursor: pointer;}
+.blue .blue_box .phone li img {width: 75px; height: 75px; cursor: pointer;}
+
+
+
+/*footer 영역*/
+footer {
+    width: 100%; height: 230px;
+    background-color: rgb(251, 251, 251);
+}
+footer .footer_box{
+    width: 1000px; height: 200px;
+    display: flex;
+}
+footer .footer_box .Address {
+    margin: 30px 130px;
+    line-height: 34px;
+    font-size: 13.7px;
+}
